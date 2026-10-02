@@ -1,0 +1,921 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: #f5f7f5;
+}
+
+/* =========================
+   فرم ورود و ثبت‌نام
+========================= */
+
+.auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-symbol {
+    font-size: 50px;
+    color: #c6a15b;
+    margin-bottom: 10px;
+}
+
+.auth-logo h1 {
+    color: #123c32;
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.auth-logo p {
+    color: #777;
+    margin: 0;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.auth-tabs {
+    display: flex;
+    background: #e7ece9;
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.auth-tab.active {
+    background: white;
+    color: #123c32;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.auth-card form h2 {
+    color: #123c32;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.form-description {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.auth-card label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.auth-card input[type="text"],
+.auth-card input[type="email"],
+.auth-card input[type="tel"],
+.auth-card input[type="password"] {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.auth-card input:focus {
+    border-color: #1d604e;
+}
+
+.auth-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #123c32;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: inherit;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.auth-button:hover {
+    background: #1d604e;
+}
+
+.switch-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.switch-text button {
+    border: none;
+    background: none;
+    color: #1d604e;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.terms input {
+    width: auto;
+}
+
+.auth-footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =========================
+   هدر و منو
+========================= */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: #123c32;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > span {
+    font-size: 35px;
+    color: #c6a15b;
+}
+
+.logo strong {
+    display: block;
+    font-size: 18px;
+}
+
+.logo small {
+    display: block;
+    margin-top: 3px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #c6a15b;
+}
+
+.header-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.search-btn,
+.profile-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.search-btn:hover,
+.profile-btn:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* =========================
+   عکس اصلی (جمکران)
+========================= */
+
+.hero {
+    min-height: 620px;
+    background-image: url("jamkaran.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(18, 60, 50, 0.5);
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0 0 15px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   عنوان بخش‌ها
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.section-title h2 {
+    color: #123c32;
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.section-title p {
+    color: #777;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* =========================
+   کارت‌ها
+========================= */
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.course-card,
+.video-card,
+.store-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.course-card:hover,
+.video-card:hover,
+.store-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.course-card h3,
+.video-card h3,
+.store-card h3 {
+    color: #123c32;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.course-card p,
+.video-card p,
+.store-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.course-card button,
+.video-card button,
+.store-card button {
+    background: #123c32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.course-card button:hover,
+.video-card button:hover,
+.store-card button:hover {
+    background: #1d604e;
+}
+
+/* =========================
+   ویدیوها (کتاب‌محور)
+========================= */
+
+.videos-section {
+    padding: 60px 20px;
+    background: white;
+}
+
+.video-placeholder {
+    background: linear-gradient(135deg, #123c32, #1d604e);
+    color: white;
+    font-size: 40px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* دکمه‌های کتاب */
+.books-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.book-btn {
+    border: none;
+    border-radius: 12px;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.book-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.book-btn.active {
+    opacity: 1;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+/* لیست سوره‌ها */
+.surah-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.surah-btn {
+    background: white;
+    color: #123c32;
+    border: 2px solid #123c32;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.surah-btn:hover {
+    background: #123c32;
+    color: white;
+}
+
+/* بخش‌های سوره */
+.parts-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.part-btn {
+    background: #e8ece9;
+    color: #123c32;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.part-btn:hover {
+    background: #d0d8d3;
+}
+
+.part-btn.active {
+    background: #123c32;
+    color: white;
+}
+
+.surah-videos {
+    padding: 0 20px;
+}
+
+/* =========================
+   درباره ما
+========================= */
+
+.about-section {
+    padding: 60px 20px;
+    background: #f5f7f5;
+}
+
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-icon {
+    font-size: 60px;
+    background: #123c32;
+    color: #c6a15b;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-content h3 {
+    color: #123c32;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.about-content strong {
+    color: #c6a15b;
+}
+
+/* =========================
+   ارتباط با ما
+========================= */
+
+.contact-section {
+    padding: 60px 20px;
+    background: white;
+}
+
+.contact-card {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+    background: #f5f7f5;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.contact-item:hover {
+    border-color: #123c32;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-icon {
+    font-size: 30px;
+    background: #123c32;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item strong {
+    color: #123c32;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.contact-item p {
+    color: #777;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   پروفایل
+========================= */
+
+.profile-section {
+    padding: 60px 20px;
+    background: #f5f7f5;
+}
+
+.profile-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-icon {
+    font-size: 45px;
+    background: #123c32;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.profile-info h3 {
+    color: #123c32;
+    margin: 0 0 12px;
+}
+
+.profile-info p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.profile-info strong {
+    color: #123c32;
+}
+
+.profile-btn-action {
+    background: #123c32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-btn-action:hover {
+    background: #1d604e;
+}
+
+/* فرم ویرایش */
+#profileEditForm {
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+}
+
+#profileEditForm.hidden {
+    display: none;
+}
+
+#profileEditForm h3 {
+    color: #123c32;
+    margin-top: 0;
+    text-align: center;
+}
+
+#profileEditForm label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #333;
+}
+
+#profileEditForm input {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#profileEditForm input:focus {
+    border-color: #1d604e;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.save-btn {
+    flex: 1;
+    background: #123c32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #1d604e;
+}
+
+.cancel-btn {
+    flex: 1;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #c0392b;
+}
+
+/* =========================
+   فوتر
+========================= */
+
+.site-footer {
+    background: #123c32;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.site-footer strong {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    color: #c6a15b;
+}
+
+.site-footer p {
+    margin: 0 0 15px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.site-footer small {
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+/* =========================
+   مودال ویدیو
+========================= */
+
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.video-close {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 12px;
+    border-radius: 8px;
+}
+
+/* =========================
+   موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    .main-header {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .main-nav {
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-overlay {
+        min-height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .contact-item {
+        max-width: 100%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-btn-action {
+        width: 100%;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .course-card,
+    .video-card,
+    .store-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .book-btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .surah-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
