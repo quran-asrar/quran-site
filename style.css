@@ -919,3 +919,91 @@ body {
         font-size: 13px;
     }
 }
+/* =========================
+   دوره‌ها
+========================= */
+
+.courses-section {
+    padding: 60px 20px;
+    background: #f5f7f5;
+}
+
+.courses-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.course-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.course-icon {
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.course-card h3 {
+    color: #123c32;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.course-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.course-price {
+    color: #C6A15B;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.course-btn {
+    background: #123c32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.course-btn:hover:not(:disabled) {
+    background: #1d604e;
+}
+
+.course-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
